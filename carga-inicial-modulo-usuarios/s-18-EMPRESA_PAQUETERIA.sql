@@ -1,0 +1,10 @@
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (1, 'Yundt, Bechtelar and Williamson');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (2, 'Fadel-Lang');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (3, 'Grant Inc');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (4, 'Lindgren Group');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (5, 'Kohler, Hoeger and Langosh');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (6, 'Block-DuBuque');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (7, 'D''Amore, Klocko and Hodkiewicz');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (8, 'Pfeffer, Kuhn and Gutkowski');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (9, 'Wilderman, Hahn and Luettgen');
+insert into EMPRESA_PAQUETERIA (EMPRESA_ID, NOMBRE_EMPRESA) values (10, 'Treutel-Parker');
