@@ -1,0 +1,30 @@
+#Autor: Giselle Espinosa
+#Fecha creación: 07/junio/2024
+#Descripción: Creacion de backups y politica de retencion
+
+connect target "sys/system3 as sysdba"
+
+#° Posterior a la creacion del modelo relacional y a la carga inicial,
+#realizar un backup completo incluyendo archived redo logs
+
+backup database plus archivelog tag esco_emarket_full_bs_01;
+
+#° Generando un image copy esco_emarket_full_copy_01 Nos va a dar un archivo por cada data file
+
+backup as copy database tag esco_emarket_full_copy_01;
+
+#Caracteristica de un incremental nivel 0 -> Full backup, es una referencia para
+#generar un backup incremental.
+#° Generando backup incremental nivel 0 tag esco_emarket_full_bs_n0_01
+
+backup as backupset incremental level 0 database tag esco_emarket_full_bs_n0_01; 
+
+#° Generando un backup incremental diferencial nivel 1 esco_emarket_bs_n1_01
+
+backup as backupset incremental level 1 database tag esco_emarket_bs_n1_df_01;
+
+delete obsolete;    
+
+#Configurando politica de retencion de respaldos
+
+configure retention policy to recovery window of 7 days;

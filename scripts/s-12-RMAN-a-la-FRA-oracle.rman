@@ -1,0 +1,12 @@
+#Autor: Giselle Espinosa
+#Fecha de creación: 05/junio/2024
+#Descripción: Preparar ambiente para respaldos almacenar en FRA
+
+connect target "sys@escoproy as sysdba"
+
+delete obsolete;
+configure controlfile autobackup format for device type disk clear;
+configure channel device type disk clear;
+CONFIGURE SNAPSHOT CONTROLFILE NAME clear;
+
+
